@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you</title>
+
+    <link rel="shortcut icon" href="IMG_7738.PNG" type="image/x-icon">
+
+    <style>
+        body{
+            background-image: url(body1.jpg);
+        }
+        .container{
+            display: flex;
+            justify-content: center;          
+        }
+        header{
+            background-color: rgba(255, 182, 193, 0.55);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-radius: 50px;
+        }
+        footer{
+            background-color: rgba(255, 182, 193, 0.55);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            border-radius: 80px;
+        }
+        .slider {
+            border: 5px solid red;
+            max-width: 70%;
+            position: relative;
+            overflow: hidden;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 50px;
+        }
+        .slider-line {
+            display: flex;
+            transition: all ease 2s;
+        }
+        .button {
+            position: absolute;
+            top: 50%;
+        }
+        .btn-next {
+            right: 5px;  
+            height: 40px;
+            width: 40px;   
+            opacity: 0.28;
+            color: red;
+        }
+        .btn-prev{
+            left: 3px;
+            height: 40px;
+            width: 40px;
+            opacity: 0.28;
+            color: red;
+        }
+        .f1, .f2, .f3{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hd">
+            <h1>
+                З днем народження!            
+            </h1>
+            <h6>
+                P.s:Дякую за все)
+            </h6>
+        </div>
+    </header>
+
+   <div class="container">
+
+                <div class="slider">
+                     <div class="slider-line">
+                        <img src="i1.jpg" alt="1" class="slider-item">
+                        <img src="i2.jpg" alt="2" class="slider-item">
+                        <img src="i3.jpg" alt="3" class="slider-item">
+                        <img src="i4.jpg" alt="4" class="slider-item">
+                        <img src="i5.jpg" alt="5" class="slider-item">
+                        <img src="i6.jpg" alt="6" class="slider-item">
+                        <img src="i7.jpg" alt="7" class="slider-item">
+                        <img src="i8.jpg" alt="8" class="slider-item">
+                        <img src="i9.jpg" alt="9" class="slider-item">
+                        <img src="i10.jpg" alt="10" class="slider-item">
+                        <img src="i11.jpg" alt="11" class="slider-item">
+                        <img src="i12.jpg" alt="11" class="slider-item">
+                        <img src="i13.jpg" alt="11" class="slider-item">
+                        <img src="i14.jpg" alt="11" class="slider-item">
+                        <img src="i15.jpg" alt="11" class="slider-item">
+                    </div>
+                    <button class=" button btn-prev">&#10094;</button>
+                    <button class=" button btn-next">&#10095;</button>
+                </div>
+
+   </div>
+
+    <footer>
+
+        <div class="end1">
+            <img src="IMG_7738.PNG" alt="" srcset="" height="140px" width="140px" class="f1">   
+        </div>
+        <div class="end2">
+            <img src="IMG_7739.PNG" alt="" srcset="" height="140px" width="140px" class="f2">
+        </div>
+        <div class="end3">
+            <img src="IMG_7740.PNG" alt="" srcset="" height="140px" width="140px" class="f3">
+        </div>
+
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
